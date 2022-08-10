@@ -1,13 +1,13 @@
 package com.sellerproject;
 
-public class Sellermodel {
+public class seller1 {
 
 	private int id;
 	private String name;
 	private String email;
 	private String location;
 	
-	public Sellermodel(int id, String name, String email, String location) {
+	public seller1(int id, String name, String email, String location) {
 		this.id = id;
 		this.name = name;
 		this.email = email;
@@ -39,10 +39,11 @@ public class Sellermodel {
 	}
 	
 	public String toString() {
-		return "Seller Id - " + id +
+		return  "Seller Id - " + id +
 				", Seller Name - " + name + 
 				", Seller Email - " + email + 
 				", Seller Location - " + location;
 	}
 	
 }
+

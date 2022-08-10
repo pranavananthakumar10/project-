@@ -7,23 +7,26 @@ import java.util.stream.Collectors;
 
 public class seller {
 
-	List <Sellermodel> sellerList = new ArrayList <Sellermodel> ();
+	List <seller1> sellerList = new ArrayList <seller1> ();
 	
 	public void populateRecords() {
-		sellerList.add(new Sellermodel(0, "pranav", "pranav@gmail.com", "Chennai"));
-		sellerList.add(new Sellermodel(1, "ezhil", "ezhi@gmail.com", "Banglore"));
-		sellerList.add(new Sellermodel(2, "ragu", "ragu@gmail.com", "Hyderabad"));
-		sellerList.add(new Sellermodel(3, "anand", "anand@gmail.com", "Mumbai"));
-		sellerList.add(new Sellermodel(4, "sheela", "sheela@gmail.com", "Pune"));
-		sellerList.add(new Sellermodel(5, "Elakiya", "Elakiya@gmail.com", "Indore"));
+		sellerList.add(new seller1(100, "pranav", "pranav@gmail.com", "Chennai"));
+		sellerList.add(new seller1(101, "ezhil", "ezhi@gmail.com", "kerala"));
+		sellerList.add(new seller1(102, "ragu", "ragu@gmail.com", "uttarkhand"));
+		sellerList.add(new seller1(103, "anand", "anand@gmail.com", "rajasthan"));
+		sellerList.add(new seller1(104, "sheela", "sheela@gmail.com", "kashmir"));
+		sellerList.add(new seller1(105, "Elakiya", "Elakiya@gmail.com", "haryana"));
+		sellerList.add(new seller1(105, "ramu", "ram1@gmail.com", "haryana"));
+		sellerList.add(new seller1(105, "gugan", "gugan34@gmail.com", "haryana"));
+		sellerList.add(new seller1(105, "harni", "harni23@gmail.com", "haryana"));
 	}
 	
 	public void addSeller(int id, String name, String location, String email) {
-		sellerList.add(new Sellermodel(id, name, location, email));
-		System.out.println("Seller Added");
+		sellerList.add(new seller1(id, name, location, email));
+		System.out.println("Seller Add....");
 	}
 	
-	public void displayAllSellers() {
+	public void displaySellers() {
 		sellerList.stream().forEach((seller) -> System.out.println(seller));
 	}
 	
